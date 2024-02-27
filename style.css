@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+section{
+    /* min-height: 100vh; */
+    padding: 2em 0;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%));  
+    padding: 1em 8em;
+    color: #fff;
+    position: fixed;
+    width: 100vw;
+    z-index: 200;
+    /* overflow: hidden; */
+}
+
+.navbarLeftSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   position: relative;
+   z-index: 260;
+    
+}
+.navElements > ul{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2em;
+    min-width: 40vw;
+
+}
+.navElements ul li{
+    list-style: none;
+    margin: 4px 0;
+}
+.navElements ul a{
+    color: #333;
+    
+}
+.navElements ul img{
+    object-fit: contain;
+}
+.navbarRightSection{
+    /* width: 10%; */
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+    /* z-index: 200; */
+
+}
+.logo{
+    margin-right: 2em;
+}
+.whiteButton{
+    color: hsl(356, 100%, 66%);
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdownMenu{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+}
+.dropdown{
+    position: relative;
+}
+.dropdownMenu:hover + .arrowIcon{
+    transform: translateX(50%);
+}
+.dropdownMenu:hover + .dropdownlist{
+    display: block;
+}
+.dropdownlist{
+    flex-direction: column;
+    background: #fff;
+    color: #333;
+    padding: 1em 2em;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 300;
+    display: none;
+}
+
+.dropdownlist:hover{
+    display: block;
+}
+.hamburgerMenu{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.hamburgerIcon{
+    /* width: 2em; */
+    cursor: pointer;
+}
+.hamburger:hover + .closeIcon{
+    display: block;
+}
+.closeIcon{
+    display: none;
+}
+
+
+
+
+/* Home */
+
+.homeContainer{
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    border-radius: 0 0 0 5em;
+    overflow: hidden;
+    position: relative;
+    /* z-index: -5; */
+}
+.homeContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    transform: translate(0, 43%);
+    z-index: 105;
+
+    /* max-height: fit-content; */
+    /* transform: translate(50, 50); */
+}
+.homeContent h1{
+    font-size: 3em;
+}
+.homeContent p{
+    margin: 0.45em 0;
+}
+.homeButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.transparentButton{
+    color:#fff;
+    background: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 14px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.homeBgImage{
+    position: absolute;
+    z-index: 101;
+    bottom: -30%;
+    left: -15%;
+    transform: translate(0, 25%);
+    width: 120em;
+    opacity: 0.75;
+}
+
+/* Intro Section */
+
+.introContainer{
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+    position: relative;
+    padding: 2em 8em;
+    overflow: hidden;
+
+}
+.introContainer > h2{
+    text-align: center;
+    margin-top: 2em;
+}
+.introContent{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.introTextSection{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+.introTextSection h2{
+    margin-bottom: 1em;
+}
+.introTextSection p{
+    margin-bottom: 2em;
+}
+.introImage{
+    position: absolute;
+    top: 0;
+    right: -15%;
+    width: 43em;
+    /* overflow-y: hidden; */
+    /* height: fit-content; */
+    
+}
+
+
+.phoneContainer{
+    background: hsl(237, 23%, 32%);
+    min-height: 63vh;
+    position: relative;
+    /* overflow-y: hidden; */
+    background-image: url('images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 22% left -45%;
+    color: #fff;
+    /* padding: 2em 8em; */
+
+    display: flex;
+    align-items: center;
+    /* gap: 4em; */
+    /* justify-content: space-between; */
+
+}
+.phonesSection{
+    width: 100%;
+}
+.phonesTextSection{
+    margin-left: 8em;
+}
+.phoneImages{
+    z-index: 4;
+    position: absolute;
+    top: -18%;
+}
+
+
+/* Benefit Section */
+
+.benefitContainer{
+    display: flex;
+    align-items: center;
+    min-height: 95vh;
+    /* overflow-x: hidden; */
+    position: relative;
+    padding: 2em 8em;
+    overflow: hidden;
+
+}
+.benefitTextSection{
+    width: 60%;
+    /* text-align: right; */
+}
+.benefitTextSection h2{
+    margin-bottom: 1em;
+}
+.benefitTextSection p{
+    margin-bottom: 2em;
+}
+.benefitImageSection{
+    width: 40%;
+}
+.laptopImage{
+    position: absolute;
+    top: 0;
+    left: -15%;
+    width: 43em;
+}
+
+/* Footer */
+
+footer{
+    background: hsl(237, 17%, 21%);
+    min-height: 40vh;
+    padding: 4em 0;
+    padding-right: 15em;
+    padding-left: 8em;
+    color: #fff;
+    border-radius: 0 5em 0 0;
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.footerPart{
+    /* border: 1px solid #fff; */
+    margin-top: 0.85em;
+}
+.footerPart ul li{
+    list-style: none;
+    margin: 0.85em 0;
+}
+
+@media screen and (max-width: 1111px) {
+    .introImage{
+        width: 32em;
+        top: 15%;
+    }
+    .introContainer{
+        min-height: 85vh;
+    }
+    .phoneImages{
+        width: 25em;
+        top: -10%;
+    }
+    .phoneContainer{
+        min-height: 45vh;
+    }
+    .laptopImage{
+        width: 31em;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .introContainer{
+        padding: 2em 5em;
+    }
+    .navbar{
+        padding: 1.5em 5em;
+
+    }
+    .benefitContainer{
+        padding: 2em 5em;
+
+
+    }
+    .phoneImages{
+        width: 20em;
+    }
+    .phoneContainer{
+        min-height: 35vh;
+    }
+    .laptopImage{
+        width: 25em;
+        top: 25%;
+    }
+    .introImage{
+        width: 25em;
+        top: 25%;
+    }
+    footer{
+        padding-left: 4em;
+        padding-right: 7.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburgerMenu{
+        display: block;
+    }
+    .navElements{
+        display: none;
+    }
+    .navbarRightSection{
+        display: none;
+    }
+    .homeContent h1{
+        font-size: 2.4em;
+    }
+    .phonesTextSection{
+        margin-left: 12em;
+    }
+    .phoneContainer{
+        padding: 2em 0;
+        padding-right: 1.5em;
+    }
+    
+}
+
+@media screen and (550px <= width <= 767px){
+    .introImage{
+        width: 20em;
+        top: 30%;
+    }
+    .laptopImage{
+        width: 20em;
+        top: 30%;
+    }
+    .introContainer{
+        padding: 2em 3.5em;
+    }
+    .navbar{
+        padding: 1.5em 3.5em;
+
+    }
+    .benefitContainer{
+        padding: 2em 3.5em;
+
+
+    }
+    .phoneImages{
+        width: 16em;
+        top: 5%;
+    }
+    .phoneContainer{
+        padding-right: 1em;
+        min-height: 25vh;
+    }
+}
+@media screen and (max-width: 550px) {
+    .introImage{
+        position: relative;
+        right: 0;
+    }
+    .introContent{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .introTextSection{
+        max-width: 100%;
+    }
+    .phoneImages{
+        position: relative;
+    }
+    .phoneContainer{
+        flex-direction: column;
+        padding-right: 0;
+    }
+    .phonesTextSection{
+        margin-left: 0;
+        margin: 0 3em;
+    }
+    .phonesSection{
+       width: fit-content; /* width: 0; */
+    }
+    .benefitContainer{
+        flex-direction: column;
+        padding: 2em 4em;
+    }
+    .laptopImage{
+        position: relative;
+        left: 0;
+    }
+    .benefitImageSection{
+       width: fit-content;
+    }
+    .benefitTextSection{
+        width: 100%;
+        margin-top: 3em;
+    }
+    .footerContainer{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    .navbar{
+        padding: 2em 2.5em;
+    }
+    .introContainer{
+        padding: 2em 2.5em;
+    }
+    .benefitContainer{
+        padding: 2.5em 2.5em;
+    }
+    footer{
+        padding: 2.5em 2.5em;
+    }
+}
+
