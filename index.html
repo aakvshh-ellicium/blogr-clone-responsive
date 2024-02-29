@@ -1,88 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>[Blogr] - Website Clone</title>
+
+  <title>[Blogr] - Website Clone (Copy)</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbarLeftSection">
-        <img src="images/logo.svg" class="logo" alt="">
-        <div class="navElements">
-          <ul>
-            <div class="dropdown">
-              <div class="dropdownMenu">
-                <li>Product</li>
-                <img src="images/icon-arrow-light.svg" class="arrowIcon" alt="">
-              </div>
-              <div class="dropdownlist">
-                <ul>
-                  <a href="#"><li>Overview</li></a>
-                  <a href="#"><li>Pricing</li></a>
-                  <a href="#"><li>Marketplace</li></a>
-                  <a href="#"><li>Features</li></a>
-                  <a href="#"><li>Integrations</li></a>
-                </ul>
-              </div>
+  <nav class="navbar globalContainer">
+    <div class="navbarLeftSection">
+      <img src="images/logo.svg" class="logo" alt="">
+      <div class="navElements">
+        <ul>
+          <div class="dropdown">
+            <div class="dropdownMenu">
+              <li>Product</li>
+              <img src="images/icon-arrow-light.svg" class="arrowIcon" alt="">
             </div>
-            <div class="dropdown">
-              <div class="dropdownMenu">
-                <li>Company</li>
-                <img src="images/icon-arrow-light.svg" class="arrowIcon" alt="">
-              </div>
-              <div class="dropdownlist">
-                <ul>
-                  <a href="#"><li>About</li></a>
-                  <a href="#"><li>Team</li></a>
-                  <a href="#"><li>Blog</li></a>
-                  <a href="#"><li>Careers</li></a>
-                </ul>
-              </div>
+            <div class="dropdownlist">
+              <ul>
+                <a href="#">
+                  <li>Overview</li>
+                </a>
+                <a href="#">
+                  <li>Pricing</li>
+                </a>
+                <a href="#">
+                  <li>Marketplace</li>
+                </a>
+                <a href="#">
+                  <li>Features</li>
+                </a>
+                <a href="#">
+                  <li>Integrations</li>
+                </a>
+              </ul>
             </div>
-            <div class="dropdown">
-              <div class="dropdownMenu">
-                <li>Connect</li>
-                <img src="images/icon-arrow-light.svg" class="arrowIcon" alt="">
-              </div>
-              <div class="dropdownlist">
-                <ul>
-                  <a href="#"><li>Contact</li></a>
-                  <a href="#"><li>Newsletter</li></a>
-                  <a href="#"><li>LinkedIn</li></a>
-                </ul>
-              </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdownMenu">
+              <li>Company</li>
+              <img src="images/icon-arrow-light.svg" class="arrowIcon" alt="">
             </div>
-          </ul>
-        </div>
+            <div class="dropdownlist">
+              <ul>
+                <a href="#">
+                  <li>About</li>
+                </a>
+                <a href="#">
+                  <li>Team</li>
+                </a>
+                <a href="#">
+                  <li>Blog</li>
+                </a>
+                <a href="#">
+                  <li>Careers</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdownMenu">
+              <li>Connect</li>
+              <img src="images/icon-arrow-light.svg" class="arrowIcon" alt="">
+            </div>
+            <div class="dropdownlist">
+              <ul>
+                <a href="#">
+                  <li>Contact</li>
+                </a>
+                <a href="#">
+                  <li>Newsletter</li>
+                </a>
+                <a href="#">
+                  <li>LinkedIn</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </ul>
+      </div>
 
+    </div>
+    <div class="navbarRightSection">
+      <a href="#">Login</a>
+      <button class="whiteButton">Sign Up</button>
+    </div>
+    <div class="hamburgerMenu">
+      <div class="hamburger">
+        <input type="checkbox" class="checkbox">
+        <img src="images/icon-hamburger.svg" class="hamburgerIcon" alt="">
       </div>
-      <div class="navbarRightSection">
-        <a href="#">Login</a>
-        <button class="whiteButton">Sign Up</button>
+      <div class="close">
+        <img src="images/icon-close.svg" class="closeIcon" alt="">
       </div>
-      <div class="hamburgerMenu">
-        <div class="hamburger">
-          <input type="checkbox" class="checkbox">
-          <img src="images/icon-hamburger.svg" class="hamburgerIcon" alt="">
-        </div>
-        <div class="close">
-          <img src="images/icon-close.svg" class="closeIcon" alt="">
-        </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
 
   <!-- Home -->
@@ -102,61 +134,73 @@
 
   <!-- Designing Future -->
 
-  <section>
-    <div class="introContainer">
+  <!-- <section> -->
+      <div class="introContainer globalContainer">
       <h2>Designing the Future</h2><br>
 
-      <div class="introContent">
-        <div class="introTextSection">
-          <h2>Introducing an extensible editor</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo itaque animi fugiat, repellat quam iure at fuga optio. Aut dignissimos unde amet. Molestias aliquam blanditiis quod incidunt temporibus aperiam.</p>
-          <br>
-          <h2>Robust Content Management</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo itaque animi fugiat, repellat quam iure at fuga optio. Aut dignissimos unde amet. Molestias aliquam blanditiis quod incidunt temporibus aperiam.</p>
+
+        <div class="introContent">
+          <div class="introTextSection">
+            <h2>Introducing an extensible editor</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo itaque animi fugiat, repellat quam
+              iure at fuga optio. Aut dignissimos unde amet. Molestias aliquam blanditiis quod incidunt temporibus
+              aperiam.</p>
+            <br>
+            <h2>Robust Content Management</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo itaque animi fugiat, repellat quam
+              iure at fuga optio. Aut dignissimos unde amet. Molestias aliquam blanditiis quod incidunt temporibus
+              aperiam.</p>
+
+          </div>
+          <div class="introImageSection">
+            <img src="images/illustration-editor-desktop.svg" class="introImage" alt="">
+            <img src="images/illustration-editor-mobile.svg" class="introImage" id="mobileImg" style="width: 22em;"
+              alt="">
+          </div>
 
         </div>
-        <div class="introImageSection">
-          <img src="images/illustration-editor-desktop.svg" class="introImage" alt="">
-          <img src="images/illustration-editor-mobile.svg" class="introImage" id="mobileImg" style="width: 22em;" alt="">
-        </div>
-        
+
       </div>
-      
-    </div>
-  </section>
+  <!-- </section> -->
 
 
   <!-- Phones -->
 
-  <section>
+  <!-- <section> -->
     <div class="phoneContainer">
-      <!-- <img src="" class="circles" alt=""> -->
+      <img src="" class="circles" alt="">
       <div class="phonesSection">
         <img src="images/illustration-phones.svg" class="phoneImages" alt="">
-      </div>  
+      </div>
       <div class="phonesTextSection">
         <h2>State of the Art Infrastructure</h2><br>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, aliquid suscipit vero optio, quaerat temporibus saepe ad autem similique atque sequi tempore itaque hic consectetur dolores nulla animi commodi odit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, aliquid suscipit vero optio, quaerat
+          temporibus saepe ad autem similique atque sequi tempore itaque hic consectetur dolores nulla animi commodi
+          odit.</p>
       </div>
     </div>
 
-  </section>
+  <!-- </section> -->
 
 
   <!-- Benefit Section -->
 
   <section>
-    <div class="benefitContainer">
+    <div class="benefitContainer globalContainer">
       <div class="benefitImageSection">
         <img src="images/illustration-laptop-desktop.svg" class="laptopImage" alt="">
         <img src="images/illustration-laptop-mobile.svg" class="laptopImage" id="mobileImg" alt="">
       </div>
       <div class="benefitTextSection">
         <h2>Free, Open, Simple</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem in necessitatibus eius quae voluptate eaque, fugit voluptates unde quisquam officiis, laborum veniam suscipit quasi tenetur perferendis adipisci accusamus, quidem consequuntur quam autem aut quis placeat ab odit. Tempore, voluptatem dicta.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem in necessitatibus eius quae voluptate
+          eaque, fugit voluptates unde quisquam officiis, laborum veniam suscipit quasi tenetur perferendis adipisci
+          accusamus, quidem consequuntur quam autem aut quis placeat ab odit. Tempore, voluptatem dicta.</p>
         <br>
         <h2>Powerful Tooling</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem in necessitatibus eius quae voluptate eaque, fugit voluptates unde quisquam officiis, laborum veniam suscipit quasi tenetur perferendis adipisci accusamus, quidem consequuntur quam autem aut quis placeat ab odit. Tempore, voluptatem dicta.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem in necessitatibus eius quae voluptate
+          eaque, fugit voluptates unde quisquam officiis, laborum veniam suscipit quasi tenetur perferendis adipisci
+          accusamus, quidem consequuntur quam autem aut quis placeat ab odit. Tempore, voluptatem dicta.</p>
 
       </div>
     </div>
@@ -170,33 +214,61 @@
       <div class="footerPart">
         <h4>Product</h4><br>
         <ul>
-          <a href="#"><li>Overview</li></a>
-          <a href="#"><li>Pricing</li></a>
-          <a href="#"><li>Marketplace</li></a>
-          <a href="#"><li>Features</li></a>
-          <a href="#"><li>Integrations</li></a>
+          <a href="#">
+            <li>Overview</li>
+          </a>
+          <a href="#">
+            <li>Pricing</li>
+          </a>
+          <a href="#">
+            <li>Marketplace</li>
+          </a>
+          <a href="#">
+            <li>Features</li>
+          </a>
+          <a href="#">
+            <li>Integrations</li>
+          </a>
         </ul>
       </div>
       <div class="footerPart">
         <h4>Company</h4><br>
         <ul>
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>Team</li></a>
-          <a href="#"><li>Blog</li></a>
-          <a href="#"><li>Careers</li></a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Team</li>
+          </a>
+          <a href="#">
+            <li>Blog</li>
+          </a>
+          <a href="#">
+            <li>Careers</li>
+          </a>
         </ul>
       </div>
       <div class="footerPart">
         <h4>Connect</h4><br>
         <ul>
-          <a href="#"><li>Contact</li></a>
-          <a href="#"><li>Newsletter</li></a>
-          <a href="#"><li>LinkedIn</li></a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+          <a href="#">
+            <li>Newsletter</li>
+          </a>
+          <a href="#">
+            <li>LinkedIn</li>
+          </a>
         </ul>
       </div>
-      
+
     </div>
   </footer>
 
+  <!-- <p id="er-yashvardhan" class="try"  >Aakash</p>
+  <link rel="stylesheet" href="style.css"> -->
+
 </body>
+
 </html>

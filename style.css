@@ -11,6 +11,7 @@ body{
     font-size: 16px;
     font-family: "Overpass", sans-serif;
     font-weight: 300;
+    /* background-color: aquamarine; */
 }
 a{
     text-decoration: none;
@@ -30,17 +31,22 @@ h2{
     color: hsl(208, 49%, 24%);
     
 }
+.globalContainer{
+    width: 88vw;
+    /* min-height: 100vh; */
+}
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%));  
-    padding: 1em 8em;
     color: #fff;
     position: fixed;
     width: 100vw;
-    z-index: 200;
+    z-index: 4;
+    padding: 1em 8em;
+
     /* overflow: hidden; */
 }
 
@@ -49,7 +55,7 @@ h2{
     align-items: center;
     justify-content: space-between;
    position: relative;
-   z-index: 260;
+   z-index: 5;
     
 }
 .navElements > ul{
@@ -76,7 +82,6 @@ h2{
     display: flex;
     align-items: center;
     gap: 1.3em;
-    /* z-index: 200; */
 
 }
 .logo{
@@ -107,8 +112,9 @@ h2{
 .dropdown{
     position: relative;
 }
-.dropdownMenu:hover + .arrowIcon{
-    transform: translateX(50%);
+
+.dropdownMenu:hover + .arrowIcon:hover{
+    transform: rotate(180deg);
 }
 .dropdownMenu:hover + .dropdownlist{
     display: block;
@@ -120,7 +126,7 @@ h2{
     padding: 1em 2em;
     border-radius: 4px;
     position: absolute;
-    z-index: 300;
+    z-index: 6;
     display: none;
 }
 
@@ -173,10 +179,11 @@ input[type="checkbox"]:checked + .closeIcon{
 .homeContainer{
     text-align: center;
     min-height: 94vh;
-    background: linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    background: linear-gradient(to right, hsl(13, 100%, 72%) 20%,hsl(353, 100%, 62%));
     border-radius: 0 0 0 5em;
     overflow: hidden;
     position: relative;
+    
     /* z-index: -5; */
 }
 .homeContent{
@@ -187,7 +194,7 @@ input[type="checkbox"]:checked + .closeIcon{
     bottom: 0;
     color: #fff;
     transform: translate(0, 43%);
-    z-index: 105;
+    z-index: 3;
 
     /* max-height: fit-content; */
     /* transform: translate(50, 50); */
@@ -217,27 +224,35 @@ input[type="checkbox"]:checked + .closeIcon{
 
 .homeBgImage{
     position: absolute;
-    z-index: 101;
+    z-index: 2;
     bottom: -30%;
     left: -15%;
     transform: translate(0, 25%);
     width: 120em;
-    opacity: 0.75;
+    opacity: 0.9;
 }
 
 /* Intro Section */
 
 .introContainer{
-    min-height: 100vh;
+    min-height: 120vh;
     /* overflow-x: hidden; */
     position: relative;
-    padding: 2em 8em;
-    overflow: hidden;
+    /* padding: 2em 8em; */
+    overflow: hidden;   
+    /* margin-left: 8%; */
+    /* margin: 0 auto; */
+    float: right;
+    /* margin: 0 auto; */
+    /* display: flex;
+    align-items: start; */
+    
 
 }
 .introContainer > h2{
     text-align: center;
     margin-top: 2em;
+    margin-left: -11vw;
 }
 .introContent{
     display: flex;
@@ -249,7 +264,7 @@ input[type="checkbox"]:checked + .closeIcon{
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 5em;
 }
 .introTextSection h2{
     margin-bottom: 1em;
@@ -262,7 +277,8 @@ input[type="checkbox"]:checked + .closeIcon{
     position: absolute;
     top: 0;
     right: -15%;
-    width: 41em;
+    /* left: 2em; */
+    width: 45em;
     /* overflow-y: hidden; */
     /* height: fit-content; */
     
@@ -276,15 +292,16 @@ input[type="checkbox"]:checked + .closeIcon{
     /* overflow-y: hidden; */
     background-image: url('images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
-    background-position: bottom 22% left -45%;
+    background-position: bottom 22% left -50%;
     color: #fff;
     /* padding: 2em 8em; */
-
+    min-width: 98.5vw;
     display: flex;
     align-items: center;
     /* gap: 4em; */
     /* justify-content: space-between; */
     border-radius: 0 5em 0 5em;
+    /* overflow-x: hidden; */
 
 }
 .phonesSection{
@@ -292,27 +309,35 @@ input[type="checkbox"]:checked + .closeIcon{
 }
 .phonesTextSection{
     margin-left: 8em;
+    padding: 0 8em;
 }
 .phoneImages{
-    z-index: 4;
+    z-index: 1;
     position: absolute;
     top: -18%;
+    left: 8vw;
 }
 .phonesTextSection h2{
     color: #fff;
+    font-size: 2.2em;
+    font-weight: 400;
+    /* font-family: 'Ubuntu', sans-serif; */
+
 }
-
-
+.phonesTextSection p{
+    color: #ffffffdc;
+}
 /* Benefit Section */
 
 .benefitContainer{
     display: flex;
     align-items: center;
-    min-height: 95vh;
+    min-height: 96vh;
     /* overflow-x: hidden; */
     position: relative;
-    padding: 2em 8em;
+    /* padding: 2em 8em; */
     overflow: hidden;
+    margin: 4em 0;
 
 }
 .benefitTextSection{
@@ -327,13 +352,13 @@ input[type="checkbox"]:checked + .closeIcon{
     color: hsl(207, 13%, 34%)
 }
 .benefitImageSection{
-    width: 40%;
+    width: 70%;
 }
 .laptopImage{
     position: absolute;
     top: 0;
     left: -15%;
-    width: 43em;
+    width: 47em;
 }
 
 /* Footer */
@@ -392,6 +417,8 @@ footer{
 @media screen and (max-width: 828px) {
     .introContainer{
         padding: 2em 5em;
+        float:inherit;
+        margin: 0 auto;
     }
     .navbar{
         padding: 1.5em 5em;
@@ -404,6 +431,7 @@ footer{
     }
     .phoneImages{
         width: 20em;
+        left: 6vw;
     }
     .phoneContainer{
         min-height: 35vh;
@@ -420,6 +448,10 @@ footer{
         padding-left: 4em;
         padding-right: 7.5em;
     }
+    .phonesTextSection{
+        padding: 0;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -441,6 +473,9 @@ footer{
     .phoneContainer{
         padding: 2em 0;
         padding-right: 1.5em;
+    }
+    .navbar{
+        width: 100vw;
     }
     
 }
@@ -472,7 +507,7 @@ footer{
     }
     .phoneContainer{
         padding-right: 1em;
-        min-height: 25vh;
+        min-height: 20vh;
     }
 }
 
@@ -521,6 +556,12 @@ footer{
     .footerContainer{
         flex-direction: column;
     }
+    .introContainer > h2{
+        margin-left: 0vw;
+    }
+    .globalContainer{
+        width: 100vw;
+    }
     
 }
 
@@ -534,17 +575,19 @@ footer{
     .benefitContainer{
         padding: 2.5em 2.5em;
         text-align: center;
-
+        
     }
     footer{
         padding: 2.5em 2.5em;
         text-align: center;
     }
     .phoneImages{
-        margin-top: -10em;
+        margin-top: -8em;
+        left: 0;
     }
     .phoneContainer{
         padding: 4em 0;
+        padding-bottom: 4em;
     }
     .phonesTextSection{
         margin: 0 2em;
@@ -585,4 +628,14 @@ footer{
     
 }
 
+/* p{
+    color: blanchedalmond !important;
+}
+#er-yashvardhan{
+    color: aqua !important;
+}
+.try{
+    color: yellow !important;
+    background-color: black;
+} */
 
